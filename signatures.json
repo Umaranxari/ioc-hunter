@@ -1,0 +1,34 @@
+{
+    "signatures": [
+        {
+            "name": "SQL Injection (Union-Based)",
+            "pattern": "UNION\s+SELECT",
+            "severity": "CRITICAL",
+            "category": "SQLi"
+        },
+        {
+            "name": "Generic XSS Payload",
+            "pattern": "<script>|javascript:|onerror=",
+            "severity": "HIGH",
+            "category": "XSS"
+        },
+        {
+            "name": "Directory Traversal (LFI)",
+            "pattern": "\.\./\.\./|/etc/passwd|boot\.ini",
+            "severity": "CRITICAL",
+            "category": "LFI"
+        },
+        {
+            "name": "Web Shell Activity (Common Params)",
+            "pattern": "cmd=|exec=|shell_exec|phpinfo",
+            "severity": "CRITICAL",
+            "category": "RCE"
+        },
+        {
+            "name": "Nmap Scanning User-Agent",
+            "pattern": "Nmap Scripting Engine",
+            "severity": "LOW",
+            "category": "Recon"
+        }
+    ]
+}
