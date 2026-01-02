@@ -2,7 +2,7 @@
     "signatures": [
         {
             "name": "SQL Injection (Union-Based)",
-            "pattern": "UNION\s+SELECT",
+            "pattern": "UNION[\\s+]+SELECT",
             "severity": "CRITICAL",
             "category": "SQLi"
         },
@@ -14,7 +14,7 @@
         },
         {
             "name": "Directory Traversal (LFI)",
-            "pattern": "\.\./\.\./|/etc/passwd|boot\.ini",
+            "pattern": "\\.\\./\\.\\./|/etc/passwd|boot\\.ini",
             "severity": "CRITICAL",
             "category": "LFI"
         },
